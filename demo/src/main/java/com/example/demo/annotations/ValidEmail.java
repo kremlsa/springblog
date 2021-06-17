@@ -15,7 +15,7 @@ import java.lang.annotation.Target;
 public @interface ValidEmail {
     String message() default "Invalid Email";
 
-    Class<?>[] group() default {};
+    Class<?>[] groups() default {};
 
     Class<? extends Payload>[] payload() default {};
 }
